@@ -6,7 +6,7 @@
 /*   By: mhummel <mhummel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/03 16:11:52 by mhummel           #+#    #+#             */
-/*   Updated: 2025/03/12 10:59:58 by mhummel          ###   ########.fr       */
+/*   Updated: 2025/03/26 11:13:49 by mhummel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ Dog &Dog::operator=(const Dog &other)
 
 Dog::~Dog()
 {
+	delete brain;
 	std::cout << "Dog destructor called" << std::endl;
 }
 

@@ -6,7 +6,7 @@
 /*   By: mhummel <mhummel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/03 16:11:57 by mhummel           #+#    #+#             */
-/*   Updated: 2025/03/12 10:59:54 by mhummel          ###   ########.fr       */
+/*   Updated: 2025/03/26 11:13:39 by mhummel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ Cat &Cat::operator=(const Cat &other)
 
 Cat::~Cat()
 {
+	delete brain;
 	std::cout << "Cat destructor called" << std::endl;
 }
 
