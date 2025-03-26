@@ -6,7 +6,7 @@
 /*   By: mhummel <mhummel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/03 16:10:41 by mhummel           #+#    #+#             */
-/*   Updated: 2025/03/11 12:45:29 by mhummel          ###   ########.fr       */
+/*   Updated: 2025/03/25 11:17:23 by mhummel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,12 @@ j->makeSound();
 wrongJ->makeSound(); // wont say wrongMeow! wrongMeow! because doesnt have virtual keyword
 meta->makeSound();
 wrongMeta->makeSound();
+std::cout << "\n" << std::endl;
+
+delete meta;
+delete j;
+delete i;
+delete wrongMeta;
+delete wrongJ;
 return 0;
 }
