@@ -6,7 +6,7 @@
 /*   By: mhummel <mhummel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 13:06:36 by mhummel           #+#    #+#             */
-/*   Updated: 2025/03/12 11:23:25 by mhummel          ###   ########.fr       */
+/*   Updated: 2025/03/26 11:36:54 by mhummel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,17 @@ int main(void)
 	originalCat.setIdea(0, "Sleep");
 	Cat assignedCat = originalCat; // Assignment operator
 	assignedCat.setIdea(0, "Scratch");
-	std::cout << "Original Cat: " << originalCat.getIdea(0) << "Assigned Cat: " << assignedCat.getIdea(0) << std::endl;
+	std::cout << "Original Cat: " << originalCat.getIdea(0) << " Assigned Cat: " << assignedCat.getIdea(0) << std::endl;
+
+	// Test 3: Mixed Assignment and Deletion
+	std::cout << "\n=== Test 3: Mixed Assignment and Deletion ===" << std::endl;
+	Animal* mixed = new Dog();
+	mixed->makeSound(); // "Woof! Woof!"
+	delete mixed;
+
+	mixed = new Cat();
+	mixed->makeSound(); // "Meow Meow"
+	delete mixed;
 
 	return (0);
 }
